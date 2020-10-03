@@ -13,7 +13,7 @@ const Alert = ({ text, buttonText, type, onClick }) => {
       }, 6000);
       return () => clearTimeout(timer);
     }
-  }, []);
+  }, [dispatch, onClick, type]);
 
   return (
     <div className="alert">
